@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Montadora - Rede Sigma</title>
+    <link rel="stylesheet" href="../css/montadora.css">
+    <script src="../js/montadora.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Montadora</h1>
+        
+        <div class="warning">
+            <strong>Atenção!</strong> Verifique os dados antes de cadastrar a montadora.
+        </div>
+
+        <form id="montadoraForm" onsubmit="return validateMontadoraForm()">
+            <div class="form-group">
+                <label for="nome">Nome da Montadora</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o nome da montadora" required>
+            </div>
+            <div class="form-group">
+                <label for="cnpj">CNPJ</label>
+                <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ da montadora" required>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço da montadora" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite o telefone da montadora" required>
+            </div>
+
+            <button type="submit">Cadastrar Montadora</button>
+        </form>
+
+        <h2>Lista de Montadoras</h2>
+        <table id="montadoraTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CNPJ</th>
+                    <th>Endereço</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+
+        <button onclick="goBack()">Voltar para o Menu</button>
+    </div>
+</body>
+</html>

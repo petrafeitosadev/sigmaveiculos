@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras - Rede Sigma</title>
+    <link rel="stylesheet" href="compras.css">
+    <script src="../js/compras.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Compras</h1>
+        
+        <div class="warning">
+            <strong>Atenção!</strong> Verifique as informações antes de salvar.
+        </div>
+
+        <form id="compraForm" onsubmit="return validateCompraForm()">
+            <div class="form-group">
+                <label for="fornecedor">Fornecedor</label>
+                <input type="text" id="fornecedor" name="fornecedor" placeholder="Digite o nome do fornecedor" required>
+            </div>
+            <div class="form-group">
+                <label for="produto">Produto</label>
+                <input type="text" id="produto" name="produto" placeholder="Digite o nome do produto" required>
+            </div>
+            <div class="form-group">
+                <label for="quantidade">Quantidade</label>
+                <input type="number" id="quantidade" name="quantidade" placeholder="Digite a quantidade comprada" required>
+            </div>
+            <div class="form-group">
+                <label for="precoUnitario">Preço Unitário</label>
+                <input type="number" id="precoUnitario" name="precoUnitario" placeholder="Digite o preço unitário" required>
+            </div>
+            <div class="form-group">
+                <label for="dataCompra">Data da Compra</label>
+                <input type="date" id="dataCompra" name="dataCompra" required>
+            </div>
+
+            <button type="submit">Cadastrar Compra</button>
+        </form>
+
+        <h2>Lista de Compras</h2>
+        <table id="compraTable">
+            <thead>
+                <tr>
+                    <th>Fornecedor</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Data da Compra</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- As compras cadastradas serão listadas aqui -->
+            </tbody>
+        </table>
+
+        <button onclick="goBack()">Voltar para o Menu</button>
+    </div>
+</body>
+</html>

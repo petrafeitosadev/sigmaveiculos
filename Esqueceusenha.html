@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu a Senha - Rede Sigma</title>
+    <link rel="stylesheet" href="../css/esquecesenha.css">
+    <script src="../js/esqueceusenha.js" defer></script>
+</head>
+<body>
+    <div class="autohub">
+        <div class="reset-container">
+            <img src="../imagens/logoautohub.png" alt="Logo Rede Sigma" class="logo">
+            <h1>Esqueceu a Senha?</h1>
+            <p>Digite seu número de telefone para receber um código de redefinição.</p>
+            <form id="esqueceuSenhaForm">
+                <label for="telefone_esqueceu">Número de Telefone:</label>
+                <input type="tel" id="telefone_esqueceu" name="telefone_esqueceu" placeholder="Digite seu número de telefone" required pattern="\d{11}">
+
+                <button type="submit">Enviar código de redefinição</button>
+                <p><a href="../Paginas/Login.html">Voltar para login</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

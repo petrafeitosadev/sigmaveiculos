@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas - Rede Sigma</title>
+    <link rel="stylesheet" href="../css/vendas.css">
+    <script src="../js/vendas.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Vendas</h1>
+        
+        <div class="warning">
+            <strong>Atenção!</strong> Verifique as informações antes de salvar.
+        </div>
+
+        <!-- Formulário de cadastro de venda -->
+        <form id="vendaForm" onsubmit="return validateVendaForm()">
+            <div class="form-group">
+                <label for="veiculo">Veículo</label>
+                <input type="text" id="veiculo" name="veiculo" placeholder="Digite o nome do veículo" required>
+            </div>
+            <div class="form-group">
+                <label for="cliente">Cliente</label>
+                <input type="text" id="cliente" name="cliente" placeholder="Digite o nome do cliente" required>
+            </div>
+            <div class="form-group">
+                <label for="dataVenda">Data da Venda</label>
+                <input type="date" id="dataVenda" name="dataVenda" required>
+            </div>
+            <div class="form-group">
+                <label for="valorVenda">Valor da Venda</label>
+                <input type="number" id="valorVenda" name="valorVenda" placeholder="Digite o valor da venda" required>
+            </div>
+
+            <button type="submit">Cadastrar Venda</button>
+        </form>
+
+        <h2>Lista de Vendas</h2>
+        <table id="vendaTable">
+            <thead>
+                <tr>
+                    <th>Veículo</th>
+                    <th>Cliente</th>
+                    <th>Data da Venda</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- As vendas cadastradas serão listadas aqui -->
+            </tbody>
+        </table>
+
+        <button onclick="goBack()">Voltar para o Menu</button>
+    </div>
+</body>
+</html>

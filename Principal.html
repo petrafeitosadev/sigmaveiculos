@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Sigma - Menu Principal</title>
+    <link rel="stylesheet" href="Principal.css">
+    <script src="../js/Principal.js" defer></script>
+</head>
+<body>
+    <div class="container" role="main" aria-labelledby="titulo-menu">
+        <h1 id="titulo-menu">Menu Principal AutoHub</h1>
+        <p class="description">Escolha uma das opções abaixo para acessar o módulo desejado:</p>
+        <nav class="menu" role="navigation" aria-label="Menu Principal">
+            <button onclick="openModule('veiculos')" aria-label="Abrir módulo Veículos">Veículos</button>
+            <button onclick="openModule('vendas')" aria-label="Abrir módulo Vendas">Vendas</button>
+            <button onclick="openModule('compras')" aria-label="Abrir módulo Compras">Compras</button>
+            <button onclick="openModule('pedidos')" aria-label="Abrir módulo Pedidos">Pedidos</button>
+            <button onclick="openModule('clientes')" aria-label="Abrir módulo Clientes">Clientes</button>
+            <button onclick="openModule('vendedores')" aria-label="Abrir módulo Vendedores">Vendedores</button>
+            <button onclick="openModule('montadoras')" aria-label="Abrir módulo Montadoras">Montadoras</button>
+            <button onclick="confirmExit()" aria-label="Sair do sistema">Sair</button>
+        </nav>
+    </div>
+</body>
+</html>
